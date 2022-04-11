@@ -20,6 +20,7 @@ function Register() {
     });
     if (response.ok) {
       const data = await response.json();
+      console.log(data);
       alert("registration complete");
       window.location = "/";
     } else {

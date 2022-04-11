@@ -17,7 +17,7 @@ function Sidebar() {
   const handleLogout = () => {
     const token = localStorage.getItem("token");
 
-    if(token != ""){
+    if(token !== ""){
       localStorage.removeItem("token")
       window.location = "/"
     }

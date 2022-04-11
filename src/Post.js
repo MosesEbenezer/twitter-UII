@@ -4,8 +4,8 @@ import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import PublishIcon from "@material-ui/icons/Publish";
-import DeleteIcon from '@material-ui/icons/DeleteOutlined'
+// import PublishIcon from "@material-ui/icons/Publish";
+// import DeleteIcon from '@material-ui/icons/DeleteOutlined'
 import "./Post.css";
 
 function Post(

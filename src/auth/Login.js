@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Login.css";
 import { Button } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
-import PropTypes from "prop-types";
-import { useToken } from "../useToken";
 
 async function loginUser(credentials) {
   const baseURL = "http://165.22.115.227:3021";
