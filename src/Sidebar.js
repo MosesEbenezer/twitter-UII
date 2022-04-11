@@ -14,6 +14,14 @@ import { Button } from "@material-ui/core";
 
 
 function Sidebar() {
+  const handleLogout = () => {
+    const token = localStorage.getItem("token");
+
+    if(token != ""){
+      localStorage.removeItem("token")
+      window.location = "/"
+    }
+  }
   return (
     <div className='sidebar'>
       {/* twitee icon */}
@@ -31,6 +39,7 @@ function Sidebar() {
 
       {/* Button - weet */}
       <Button variant='outlined' className='sidebar_tweet' fullWidth>Twit</Button>
+      <Button variant='outlined' className='sidebar_tweet' fullWidth onClick={handleLogout}>Logout</Button>
     </div>
   )
 }

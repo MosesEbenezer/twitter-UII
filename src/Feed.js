@@ -1,11 +1,10 @@
-import React, { useEffect, useState, useId } from "react";
+import React, { useEffect, useState } from "react";
 import "./Feed.css";
 import Post from "./Post";
 import TweetBox from "./TweetBox";
 
 function Feed(props) {
   const baseURL = "http://165.22.115.227:3021";
-  const index = useId();
   const [alltweet, setAlltweet] = useState([]);
   const [success, setSuccess] = useState(false);
   const [users, setUsers] = useState([]);
