@@ -24,7 +24,7 @@ function Post(
   },
   ...props
 ) {
-  const baseURL = "http://165.22.115.227:3021";
+  const baseURL = "/api";
 
   const [chat, showChat] = useState(false);
   const [comment, setComment] = useState("");

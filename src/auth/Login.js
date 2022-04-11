@@ -4,7 +4,7 @@ import { Button } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 
 async function loginUser(credentials) {
-  const baseURL = "http://165.22.115.227:3021";
+  const baseURL = "/api";
 
   const response = await fetch(`${baseURL}/auth/login`, {
     method: "POST",
@@ -17,8 +17,8 @@ async function loginUser(credentials) {
     const { data } = await response.json();
     return data;
   } else {
-    const error = await response.text();
-    alert(error);
+    const error = await response.json();
+    alert(error.response_description);
   }
 }
 

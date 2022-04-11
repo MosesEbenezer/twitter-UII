@@ -4,7 +4,7 @@ import { Button } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 
 function Register() {
-  const baseURL = "http://165.22.115.227:3021";
+  const baseURL = "/api";
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
