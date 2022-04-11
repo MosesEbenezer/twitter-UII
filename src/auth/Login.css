@@ -1,0 +1,61 @@
+.loginContainer {
+  flex: 0.6;
+  height: 800;
+  margin: 50px;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+
+.login_input {
+padding: 5px;
+}
+
+.login_input > input {
+border: 0.5px solid gray;
+border-radius: 30px;
+margin-left: 20px;
+width: 600px;
+height: 30px;
+padding-left: 10px;
+background-color: var(--twitter-background);
+}
+
+.loginContainer > h2 {
+margin-left: 20px;
+font-size: 18px;
+font-weight: 800;
+}
+
+.tweetBox__tweetButton {
+background-color: var(--twitter-color) !important;
+border: none !important;
+color: white !important;
+font-weight: 600 !important;
+text-transform: inherit !important;
+border-radius: 30px !important;
+width: 80px;
+height: 30px !important;
+margin-top: 20px !important;
+margin-left: auto !important;
+align-self: flex-end;
+}
+
+.linkText {
+font-weight: 600;
+font-size: 13px;
+color: var(--twitter-color) !important;
+margin: 5px;
+}
+
+.linkTextB {
+font-weight: 600;
+font-size: 12px;
+}
+
+.linkText:hover {
+border-radius: 30px;
+color: var(--twitter-color);
+transition: color 100ms ease-out;
+cursor: pointer;
+}
