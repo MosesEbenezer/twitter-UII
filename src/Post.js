@@ -5,6 +5,7 @@ import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
+import DeleteIcon from '@material-ui/icons/DeleteOutlined'
 import "./Post.css";
 
 function Post(
@@ -107,6 +108,24 @@ function Post(
     }
   };
 
+  const handleDelete = async () => {
+    const response = await fetch(`${baseURL}/twits/${id}/${user_id}`, {
+      method:"DELETE",
+      headers:{
+        "content-type":"application/json"
+      }
+    })
+
+    if(response.ok) {
+      const {response_description} = await response.json()
+      alert(response_description)
+      window.location = "/home"
+    }else{
+      const {response_description} = await response.json()
+      alert(response_description)
+    }
+  }
+
   return (
     <div className="post" key={props.id}>
       <div className="post_avatar">
@@ -183,7 +202,7 @@ function Post(
               {likes.length > 0 && likes.length}
             </span>
           </div>
-          <PublishIcon fontSize="small" />
+          {/* <DeleteIcon fontSize="small" onClick={handleDelete} /> */}
         </div>
       </div>
     </div>
